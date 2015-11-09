@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="12" y="214"/>
         </scene>
-        <!--View Controller-->
+        <!--All University View Controller-->
         <scene sceneID="t8q-yD-t2s">
             <objects>
-                <viewController id="BZU-qI-sPp" sceneMemberID="viewController">
+                <viewController id="BZU-qI-sPp" customClass="AllUniversityViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="woK-Gd-sfr"/>
                         <viewControllerLayoutGuide type="bottom" id="rpD-26-SMt"/>

@@ -261,7 +261,7 @@
     [[[self universityDetailsButton] layer] setBorderColor:[[UIColor blackColor] CGColor]];
     [[self universityDetailsButton] addTarget:self action:@selector(universityButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [[self view] addSubview:[self universityDetailsButton]];
-    [[self universityDetailsButton] setHidden:YES];
+//    [[self universityDetailsButton] setHidden:YES];
     
 }
 
@@ -423,7 +423,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSLog(@"email: %@",[self emailid]);
-    [self setTitle:@"Calculate Expenses"];
+    [self setTitle:@"Find"];
     [self setupViews];
     [self addConstraints];
 }

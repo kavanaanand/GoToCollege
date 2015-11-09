@@ -54,9 +54,11 @@
     [[cell textLabel] setText:[dict valueForKey:@"univ_name"]];
     NSNumber *number = [dict valueForKey:@"tution_fees"];
     NSString *feeString = [number stringValue];
-    NSNumber *livingExpenseNumber = [dict valueForKey:@"minimum_scholarship"];
+    NSNumber *livingExpenseNumber = [dict valueForKey:@"living_expenses"];
     NSString *leString = [livingExpenseNumber stringValue];
-    [[cell detailTextLabel] setText:[NSString stringWithFormat:@"Fees:$%@    Scholarship:$%@",feeString,leString]];
+    NSNumber *scholarshipNumber = [dict valueForKey:@"minimum_scholarship"];
+    NSString *scholarshipString = [scholarshipNumber stringValue];
+    [[cell detailTextLabel] setText:[NSString stringWithFormat:@"Fees:$%@ | Scholarship:$%@ | Living Expenses:$%@",feeString,scholarshipString,leString]];
     return cell;
 }
 
